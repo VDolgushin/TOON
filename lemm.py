@@ -39,13 +39,13 @@ def calcw1(N1, N2, N3, m, s, wSize):
     return 1 + (m - 1) * ((N3 + N2) / (wSize - N1)) ** (1 / s)
 
 
-text = open('джордж.txt', encoding='utf-8', mode='r').read()
+text = open('data/борьба.txt', encoding='utf-8', mode='r').read()
 
 words = preprocessing_lemm(text)
 
-d1t = open('d1.txt', encoding='utf-8', mode='r').read()
-d2t = open('d2.txt', encoding='utf-8', mode='r').read()
-d3t = open('d3.txt', encoding='utf-8', mode='r').read()
+d1t = open('dictionaries/d1.txt', encoding='utf-8', mode='r').read()
+d2t = open('dictionaries/d2.txt', encoding='utf-8', mode='r').read()
+d3t = open('dictionaries/d3.txt', encoding='utf-8', mode='r').read()
 D1 = preprocessing_lemm(d1t)
 D2 = preprocessing_lemm(d2t)
 D3 = preprocessing_lemm(d3t)
